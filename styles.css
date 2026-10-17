@@ -43,8 +43,25 @@ a {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #9a6b1c;
+  outline: 3px solid #9a6b1c;
   outline-offset: 4px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 12px;
+  left: 12px;
+  padding: 12px 16px;
+  transform: translateY(-160%);
+  background: var(--ink);
+  color: var(--paper-light);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .site-header {
@@ -89,7 +106,7 @@ a:focus-visible {
 .brand-tag {
   margin-top: 5px;
   color: #a27b36;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: .28em;
   text-transform: uppercase;
@@ -99,7 +116,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   gap: clamp(24px, 4vw, 58px);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -114,6 +131,9 @@ a:focus-visible {
 }
 
 .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 13px 17px;
   border: 1px solid var(--ink);
   border-radius: 2px;
@@ -156,7 +176,7 @@ a:focus-visible {
   gap: 10px;
   margin: 0 0 23px;
   color: #74796d;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: .16em;
   text-transform: uppercase;
@@ -200,7 +220,7 @@ p {
   max-width: 370px;
   margin: 27px 0 28px;
   color: #686d64;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -217,7 +237,7 @@ p {
   gap: 29px;
   min-height: 48px;
   padding: 0 18px;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   transition: transform .2s ease, background .2s ease;
 }
@@ -238,7 +258,7 @@ p {
 
 .hero-note {
   color: #85877d;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: .02em;
 }
 
@@ -255,7 +275,7 @@ p {
   border: 1px solid #c3a66c;
   border-radius: 50%;
   color: #817046;
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: .12em;
   transform: rotate(-12deg);
@@ -287,7 +307,7 @@ p {
   display: flex;
   justify-content: space-between;
   color: rgb(245 242 233 / 67%);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: .18em;
 }
@@ -338,7 +358,7 @@ p {
   top: 50%;
   right: 13px;
   color: rgb(245 242 233 / 45%);
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: .18em;
   writing-mode: vertical-rl;
 }
@@ -352,7 +372,7 @@ p {
   align-items: center;
   gap: 12px;
   color: #85877d;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: .14em;
 }
@@ -381,7 +401,7 @@ p {
   margin: 0;
   color: #74796d;
   font-family: var(--serif);
-  font-size: 15px;
+  font-size: 17px;
   font-style: italic;
 }
 
@@ -390,13 +410,13 @@ p {
   align-items: center;
   gap: 10px;
   color: var(--ink-soft);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
 }
 
 .study-strip-item span {
   color: #9a6b1c;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: .12em;
 }
 
@@ -428,7 +448,7 @@ p {
   max-width: 240px;
   margin: 0 4% 7px 28px;
   color: #72766d;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -449,7 +469,7 @@ p {
 .menu-category h3 {
   margin: 0 0 17px;
   color: #9b773a;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: .18em;
   text-transform: uppercase;
@@ -468,7 +488,7 @@ p {
   align-items: baseline;
   gap: 8px;
   color: var(--ink-soft);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .menu-item-name {
@@ -501,7 +521,7 @@ p {
   align-items: center;
   justify-content: space-between;
   color: var(--gold);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: .16em;
 }
@@ -528,7 +548,7 @@ p {
   justify-items: center;
   border: 1px solid rgb(231 183 82 / 55%);
   border-radius: 50%;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: .1em;
 }
@@ -547,7 +567,7 @@ p {
   height: 61px;
   border-style: dashed;
   color: var(--paper);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .combo-plus {
@@ -568,7 +588,7 @@ p {
 .combo-card > p {
   margin-bottom: 17px;
   color: rgb(245 242 233 / 72%);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .combo-price {
@@ -580,7 +600,7 @@ p {
   border-top: 1px solid rgb(245 242 233 / 19%);
   border-bottom: 1px solid rgb(245 242 233 / 19%);
   color: var(--gold);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .combo-price strong {
@@ -592,7 +612,7 @@ p {
   display: block;
   margin-top: 13px;
   color: rgb(245 242 233 / 47%);
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .space-section {
@@ -765,7 +785,7 @@ p {
   top: 25px;
   left: 26px;
   color: #686d64;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: .16em;
 }
@@ -793,7 +813,7 @@ p {
 .space-copy > p:not(.eyebrow) {
   margin: 24px 0 27px;
   color: #626e65;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.9;
 }
 
@@ -812,13 +832,13 @@ p {
   gap: 14px;
   padding: 12px 0;
   border-bottom: 1px solid rgb(28 45 43 / 17%);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 600;
 }
 
 .space-features span {
   color: #9a6b1c;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: .1em;
 }
 
@@ -826,7 +846,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   transition: color .2s ease;
 }
@@ -894,7 +914,7 @@ p {
   z-index: 1;
   margin-top: 21px;
   color: rgb(245 242 233 / 59%);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: .23em;
 }
@@ -910,7 +930,7 @@ p {
 }
 
 .footer-brand {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -923,12 +943,12 @@ p {
 .footer-tagline,
 .copyright {
   color: rgb(245 242 233 / 55%);
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .back-top {
   justify-self: end;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 600;
   transition: color .2s ease;
 }
@@ -1023,11 +1043,14 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
     padding: 9px 0 9px 12px;
     border: 0;
     background: transparent;
     color: var(--ink);
-    font: 600 10px var(--sans);
+    font: 600 13px var(--sans);
   }
 
   .menu-toggle-icon {
@@ -1069,7 +1092,10 @@ p {
   }
 
   .site-nav > a:not(.nav-cta) {
-    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 0;
     border-bottom: 1px solid var(--line);
   }
 
@@ -1090,7 +1116,7 @@ p {
 
   .eyebrow {
     margin-bottom: 17px;
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .hero h1 {
@@ -1100,7 +1126,7 @@ p {
   .hero-description {
     max-width: 330px;
     margin: 20px 0 23px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .hero-actions {
@@ -1109,17 +1135,12 @@ p {
 
   .hero-note {
     max-width: 110px;
-    font-size: 9px;
+    font-size: 11px;
     line-height: 1.5;
   }
 
   .hero-stamp {
-    right: 6%;
-    bottom: -14px;
-    left: auto;
-    width: 69px;
-    height: 69px;
-    font-size: 6px;
+    display: none;
   }
 
   .hero-art {
@@ -1131,7 +1152,7 @@ p {
   .art-caption {
     right: 17px;
     left: 17px;
-    font-size: 7px;
+    font-size: 10px;
   }
 
   .hero-bottom {
@@ -1152,7 +1173,7 @@ p {
   }
 
   .study-strip-item {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .section-pad {
@@ -1172,7 +1193,7 @@ p {
   .section-intro {
     max-width: 280px;
     margin: 18px 0 0;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .menu-layout {
@@ -1186,7 +1207,7 @@ p {
   }
 
   .menu-category h3 {
-    font-size: 9px;
+    font-size: 11px;
     letter-spacing: .13em;
   }
 
@@ -1196,7 +1217,7 @@ p {
 
   .menu-item {
     gap: 5px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .combo-card {
@@ -1304,6 +1325,43 @@ p {
 
   .menu-item {
     font-size: 12px;
+  }
+}
+
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cup-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy {
+    animation: arrive .65s ease-out both;
+  }
+
+  .hero-art {
+    animation: arrive .75s .1s ease-out both;
+  }
+
+  .cup-illustration {
+    animation: cup-float 5s 1s ease-in-out infinite;
   }
 }
 
