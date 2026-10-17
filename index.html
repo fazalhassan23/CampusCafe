@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1c2d2b">
+    <meta
+      name="description"
+      content="Lectures with Latte & More — good coffee, good food, good vibes. Your campus café for study breaks and everything in between."
+    >
+    <title>Lectures with Latte & More — Campus Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Lectures with Latte & More home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="32" cy="32" r="25" fill="none" stroke="currentColor" stroke-width=".8"/>
+          <path d="M18 20 32 12l14 8-14 6-14-6Z" fill="#e7b752"/>
+          <path d="M23 22v6c4 4 14 4 18 0v-6M46 20v8" fill="none" stroke="#e7b752" stroke-width="2"/>
+          <circle cx="46" cy="29" r="1.8" fill="#e7b752"/>
+          <path d="M27 31c-4 3 3 4 0 7m9-7c-4 3 3 4 0 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M20 39h20l-2 10c-.4 2-2 3-4 3h-8c-2 0-3.6-1-4-3l-2-10Zm20 3h4a4 4 0 0 1 0 8h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M22 56h20" stroke="#e7b752" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-copy">
+          <span class="brand-name">Lectures with<br>Latte & More</span>
+          <span class="brand-tag">Campus Café</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="#menu">The menu</a>
+        <a href="#space">Our space</a>
+        <a class="nav-cta" href="#menu">Find your favourite <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Your campus, a little cozier</p>
+          <h1 id="hero-title">A good place<br>to <em>pause.</em></h1>
+          <p class="hero-description">
+            Between lectures, deadlines, and everything else — there’s always time for a really good cup.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+            <span class="hero-note">Coffee, comfort & campus life</span>
+          </div>
+          <div class="hero-stamp" aria-label="Made for campus days">
+            <span>MADE FOR</span>
+            <span>CAMPUS DAYS</span>
+            <span aria-hidden="true">✳</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Illustration of a coffee cup and graduation cap">
+          <div class="art-topline"><span>GOOD COFFEE.</span><span>GOOD THINKING.</span></div>
+          <div class="art-sun"></div>
+          <svg class="cup-illustration" viewBox="0 0 450 420" role="img" aria-labelledby="cup-title">
+            <title id="cup-title">A steaming cup of coffee topped with a graduation cap</title>
+            <ellipse cx="223" cy="367" rx="122" ry="15" fill="#172321" opacity=".13"/>
+            <path d="M284 166h38c31 0 45 20 45 46s-14 48-46 48h-40" fill="none" stroke="#f4f0e8" stroke-width="19"/>
+            <path d="M281 172h35c24 0 35 15 35 40s-11 40-36 40h-34" fill="none" stroke="#a9b9b1" stroke-width="3"/>
+            <path d="M117 137h183l-16 171c-2 25-19 39-46 39h-60c-27 0-44-14-46-39l-15-171Z" fill="#f6f2e9"/>
+            <ellipse cx="209" cy="139" rx="92" ry="19" fill="#e4b250"/>
+            <ellipse cx="209" cy="139" rx="82" ry="12" fill="#684632"/>
+            <path d="M183 117c-15-15 13-18-1-34m34 34c-14-15 13-18-1-34m34 34c-14-15 13-18-1-34" fill="none" stroke="#f6f2e9" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="210" cy="223" r="47" fill="#1c2d2b"/>
+            <circle cx="210" cy="223" r="40" fill="none" stroke="#e7b752" stroke-width="1.5"/>
+            <path d="m181 207 29-15 29 15-29 12-29-12Z" fill="#e7b752"/>
+            <path d="M191 211v11c8 6 22 6 30 0v-11m18-4v16" fill="none" stroke="#e7b752" stroke-width="3"/>
+            <circle cx="239" cy="224" r="2.5" fill="#e7b752"/>
+            <path d="M202 228c-9 8 6 10-1 17m19-17c-9 8 6 10-1 17" fill="none" stroke="#f6f2e9" stroke-width="3" stroke-linecap="round"/>
+            <path d="M193 249h35l-3 18c-.7 4-3.6 6-7 6h-15c-3.4 0-6.3-2-7-6l-3-18Zm35 5h7a7 7 0 0 1 0 14h-9" fill="none" stroke="#f6f2e9" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M193 283h35" stroke="#e7b752" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div class="art-caption"><span>FIG. 01</span><span>A LITTLE FUEL FOR BIG IDEAS</span></div>
+          <span class="art-side-note" aria-hidden="true">STAY AWHILE</span>
+        </div>
+        <div class="hero-bottom"><span>SCROLL A LITTLE</span><span class="scroll-line"></span><span>01 — 03</span></div>
+      </section>
+
+      <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Made for the in-between</p>
+            <h2 id="menu-title">The good<br><em>stuff.</em></h2>
+          </div>
+          <p class="section-intro">First lecture or last-minute study session, find your little pick-me-up.</p>
+        </div>
+        <div class="menu-layout">
+          <div class="menu-categories" id="menu-categories" aria-live="polite"></div>
+          <aside class="combo-card">
+            <span class="combo-label">THE STUDY COMBO <span aria-hidden="true">✳</span></span>
+            <div class="combo-art" aria-hidden="true">
+              <span class="combo-cup">LATTE</span>
+              <span class="combo-plus">+</span>
+              <span class="combo-cookie">COOKIE</span>
+            </div>
+            <h3>One less thing<br>to think about.</h3>
+            <p>Iced Latte + Cookie</p>
+            <div class="combo-price"><span>Student ID? Take 10% off.</span><strong>৳180</strong></div>
+            <span class="combo-footnote">A little treat goes a long way.</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="space-section" id="space" aria-labelledby="space-title">
+        <div class="space-art">
+          <div class="shelf shelf-one"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="shelf shelf-two"><span></span><span></span><span></span><span></span></div>
+          <div class="space-table"><span class="table-top"></span><span class="table-leg"></span></div>
+          <div class="space-chair chair-one"><span></span></div>
+          <div class="space-chair chair-two"><span></span></div>
+          <div class="space-plant"><span></span><span></span><span></span><i></i></div>
+          <span class="space-art-label">A CORNER TO CALL YOURS</span>
+          <span class="space-art-number">02</span>
+        </div>
+        <div class="space-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Room to think</p>
+          <h2 id="space-title">Settle in.<br><em>Stay awhile.</em></h2>
+          <p>
+            Bring your notes, your friends, or just yourself. Find a spot, order something lovely, and make the most of the moment.
+          </p>
+          <ul class="space-features">
+            <li><span>01</span> A seat for solo study</li>
+            <li><span>02</span> Tables for your people</li>
+            <li><span>03</span> Coffee for the long haul</li>
+          </ul>
+          <a class="text-link" href="#menu">See what’s brewing <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="closing-note" aria-label="Café motto">
+        <span class="closing-star" aria-hidden="true">✳</span>
+        <p>Good coffee.<br><em>Good food.</em><br>Good vibes.</p>
+        <span class="closing-caption">YOUR CAMPUS CAFÉ</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home">Lectures with Latte <span>&</span> More</a>
+      <span class="footer-tagline">A campus café, made for your kind of day.</span>
+      <a class="back-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      <span class="copyright">© <span id="year"></span> Lectures with Latte & More</span>
+    </footer>
+  </body>
+</html>
