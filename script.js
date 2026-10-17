@@ -52,11 +52,23 @@ menuToggle.addEventListener("click", () => {
   const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
   menuToggle.setAttribute("aria-expanded", String(!isExpanded));
   navigation.classList.toggle("is-open", !isExpanded);
+
+  if (!isExpanded) {
+    navigation.querySelector("a").focus();
+  }
 });
 
 navigation.addEventListener("click", (event) => {
   if (event.target.closest("a")) {
     menuToggle.setAttribute("aria-expanded", "false");
     navigation.classList.remove("is-open");
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+    menuToggle.setAttribute("aria-expanded", "false");
+    navigation.classList.remove("is-open");
+    menuToggle.focus();
   }
 });
