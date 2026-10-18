@@ -34,3 +34,12 @@ export const menuData = [
     ],
   },
 ];
+
+export const studyCombo = {
+  items: [
+    { name: "Iced Latte", price: 130 },
+    { name: "Chocolate Chip Cookie", price: 60 },
+  ],
+  bundlePrice: 180,
+  studentDiscountPercent: 10,
+};
