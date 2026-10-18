@@ -44,8 +44,8 @@
       </nav>
     </header>
 
-    <main id="main-content">
-      <section class="hero" id="home" aria-labelledby="hero-title">
+    <main id="main-content" tabindex="-1">
+      <section class="hero" id="home" tabindex="-1" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-dot"></span> Your campus, a little cozier</p>
           <h1 id="hero-title">A good place<br>to <em>get it done.</em></h1>
@@ -97,7 +97,7 @@
         <div class="study-strip-item"><span>03</span> Coffee-fuelled breaks</div>
       </section>
 
-      <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+      <section class="menu-section section-pad" id="menu" tabindex="-1" aria-labelledby="menu-title">
         <div class="section-heading">
           <div>
             <p class="eyebrow"><span class="eyebrow-dot"></span> Made for the in-between</p>
@@ -115,14 +115,15 @@
               <span class="combo-cookie">COOKIE</span>
             </div>
             <h3>One less thing<br>to think about.</h3>
-            <p>Iced Latte + Cookie</p>
-            <div class="combo-price"><span>Student ID? Take 10% off.</span><strong>৳180</strong></div>
-            <span class="combo-footnote">A little treat goes a long way.</span>
+            <p class="combo-items" id="combo-items"></p>
+            <div class="combo-price"><span>Bundle price</span><strong id="combo-price"></strong></div>
+            <span class="combo-discount" id="combo-discount"></span>
+            <span class="combo-footnote" id="combo-savings"></span>
           </aside>
         </div>
       </section>
 
-      <section class="space-section" id="space" aria-labelledby="space-title">
+      <section class="space-section" id="space" tabindex="-1" aria-labelledby="space-title">
         <div class="space-art">
           <div class="shelf shelf-one"><span></span><span></span><span></span><span></span><span></span></div>
           <div class="shelf shelf-two"><span></span><span></span><span></span><span></span></div>

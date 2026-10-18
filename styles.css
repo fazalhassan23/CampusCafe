@@ -982,14 +982,23 @@ p {
   }
 
   .hero {
-    min-height: 620px;
+    grid-template-columns: 1fr;
+    min-height: auto;
     padding-right: 5%;
     padding-left: 5%;
   }
 
   .hero-art {
-    min-height: 440px;
-    margin-left: 0;
+    min-height: clamp(360px, 55vw, 510px);
+    margin: 28px 0 8px;
+  }
+
+  .hero-copy {
+    padding-bottom: 0;
+  }
+
+  .hero-stamp {
+    display: none;
   }
 
   .hero h1 {
